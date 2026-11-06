@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Talgo Investment",
+    "slug": "talgo-investment",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "talgo",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F4F6F5",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.talgo.investment"
+    },
+    "android": {
+      "package": "com.talgo.investment",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B6B4F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "color": "#0B6B4F",
+          "defaultChannel": "loan-reminders"
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
